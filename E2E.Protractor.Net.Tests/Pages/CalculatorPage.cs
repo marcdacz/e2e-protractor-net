@@ -37,5 +37,10 @@ namespace E2E.Protractor.Net.Tests.Pages
             Operator.SendKeys(selectedOperator.ToString());
             GoButton.Click();
         }
+
+        public string GetResult()
+        {
+            return ResultValue.Text;
+        }
     }
 }

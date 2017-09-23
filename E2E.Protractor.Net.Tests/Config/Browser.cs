@@ -32,7 +32,7 @@ namespace E2E.Protractor.Net.Tests.Config
                     break;               
             }
             DriverContext.NgDriver = new NgWebDriver(webDriver);
-            DriverContext.NgDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            DriverContext.NgDriver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(5);
         }
 
         public static void NavigateToHomePage()

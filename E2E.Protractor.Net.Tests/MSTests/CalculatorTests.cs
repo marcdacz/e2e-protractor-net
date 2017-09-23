@@ -9,13 +9,13 @@ namespace E2E.Protractor.Net.Tests.MSTests
     [TestClass]
     public class CalculatorTests
     {
-        private CalculatorPage calculatorPage;
+        private CalculatorPageAlt calculatorPage;
         
         [TestInitialize]
         public void Initialize()
         {
             Browser.Initialise();
-            calculatorPage = new CalculatorPage();
+            calculatorPage = new CalculatorPageAlt();
         }
 
         [TestCleanup]
@@ -28,7 +28,7 @@ namespace E2E.Protractor.Net.Tests.MSTests
         public void AddPositiveNumbers()
         {
             calculatorPage.Calculate(4, 25, "+");
-            calculatorPage.ResultValue.Text.ShouldBeEquivalentTo("29");
+            calculatorPage.GetResult().Should().Be("29");
         }
     }
 }

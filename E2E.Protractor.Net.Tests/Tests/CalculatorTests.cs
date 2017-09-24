@@ -2,20 +2,19 @@
 using E2E.Protractor.Net.Tests.Pages;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace E2E.Protractor.Net.Tests.MSTests
+namespace E2E.Protractor.Net.Tests
 {
     [TestClass]
     public class CalculatorTests
     {
-        private CalculatorPageAlt calculatorPage;
+        private CalculatorPage calculatorPage;
         
         [TestInitialize]
         public void Initialize()
         {
             Browser.Initialise();
-            calculatorPage = new CalculatorPageAlt();
+            calculatorPage = new CalculatorPage();
         }
 
         [TestCleanup]

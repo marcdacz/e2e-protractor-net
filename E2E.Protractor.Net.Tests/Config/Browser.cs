@@ -29,7 +29,7 @@ namespace E2E.Protractor.Net.Tests.Config
                     var cap = DesiredCapabilities.Chrome();
                     cap.SetCapability("version", "");
                     cap.SetCapability("platform", "LINUX");
-                    webDriver = new RemoteWebDriver(new Uri("http://localhost:4446/wd/hub"), cap);
+                    webDriver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), cap);
                     break;               
             }
             DriverContext.NgDriver = new NgWebDriver(webDriver);

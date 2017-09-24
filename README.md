@@ -1,9 +1,9 @@
 # e2e-protractor-net
 End-to-end test automation template utilising Protractor for .NET
 
-[![protractor logo](http://www.protractortest.org/img/protractor-logo-450.png)](http://www.protractortest.org/#/)
+[![protractor logo](http://www.protractortest.org/img/protractor-logo-450.png)](http://www.protractortest.org/#/) **+** <a href="https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/"><img src="https://docs.microsoft.com/en-us/dotnet/images/hub/netcore.svg" align="left" height="96" width="96" ></a>
 
-<a href="https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/"><img src="https://docs.microsoft.com/en-us/dotnet/images/hub/netcore.svg" align="left" height="48" width="48" ></a>
+
 
 ### Features:
 - Using **.NET Core 2.0** which allows execution of tests in different platforms (ie. Windows, Linux and Mac OS)

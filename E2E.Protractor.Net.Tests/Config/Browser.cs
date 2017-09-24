@@ -1,11 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.IE;
-using OpenQA.Selenium.PhantomJS;
+using OpenQA.Selenium.Remote;
 using Protractor;
 using System;
-using System.IO;
 
 namespace E2E.Protractor.Net.Tests.Config
 {
@@ -28,7 +26,10 @@ namespace E2E.Protractor.Net.Tests.Config
                     break;
                 case BrowserType.Chrome:
                 default:
-                    webDriver = new ChromeDriver(currentDirectory);
+                    var cap = DesiredCapabilities.Chrome();
+                    cap.SetCapability("version", "");
+                    cap.SetCapability("platform", "LINUX");
+                    webDriver = new RemoteWebDriver(new Uri("http://localhost:4446/wd/hub"), cap);
                     break;               
             }
             DriverContext.NgDriver = new NgWebDriver(webDriver);

@@ -21,7 +21,7 @@ End-to-end test automation template utilising Protractor for .NET
     ```
 
 ### Installation:
-Clone the repository then restor and build the solution from the command-line:
+Clone the repository then restore and build the solution from the command-line:
 ```sh
 $ cd e2e-protractor-net
 $ dotnet restore
